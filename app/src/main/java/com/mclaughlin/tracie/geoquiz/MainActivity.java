@@ -73,17 +73,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @TargetApi(11)
+   // @TargetApi(11)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate(Bundle) called");
         setContentView(R.layout.activity_main);
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            ActionBar actionBar = getActionBar();
-            actionBar.setSubtitle("Bodies of water");
-        }
+        //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+           // ActionBar actionBar = getActionBar();
+           // actionBar.setSubtitle("Bodies of water");
+       // }
 
         mQuestionTextView = (TextView)findViewById(R.id.question_text_view);
 
@@ -139,7 +139,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         updateQuestion();
-
 
     }
 
